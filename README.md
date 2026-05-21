@@ -69,3 +69,7 @@ Pull requests are welcome. For larger changes please open an issue first.
 ## License
 
 [MIT](LICENSE)
+
+## Acknowledgements
+
+Inspired by the original (but outdated) [vscode-typo3-flx-snippets](https://github.com/bhavin-nitsan/vscode-typo3-flx-snippets/) extension by bhavin-nitsan
