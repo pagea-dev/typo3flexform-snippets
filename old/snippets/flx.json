@@ -1,0 +1,92 @@
+{
+  "flx": {
+    "prefix": "flx",
+    "body": "\n<T3DataStructure>\n    <sheets>\n        <sDEF>\n            <ROOT>\n                <TCEforms>\n                    <sheetTitle>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</sheetTitle>\n                </TCEforms>\n                <type>array</type>\n                <el>\n                    \n                </el>\n            </ROOT>\n        </sDEF>\n    </sheets>\n</T3DataStructure>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxcheckbox": {
+    "prefix": "flxcheckbox",
+    "body": "\n<checkbox>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>check</type>\n            <default>0</default>\n        </config>\n    </TCEforms>\n</checkbox>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxcolor": {
+    "prefix": "flxcolor",
+    "body": "\n<color>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>input</type>\n            <size>10</size>\n            <eval>trim</eval>\n            <wizards>\n                <_PADDING>2</_PADDING>\n                <link>\n                    <type>colorbox</type>\n                    <title>Color Picker</title>\n                    <module>\n                        <name>wizard_colorpicker</name>\n                        <urlParameters>\n                            <mode>wizard</mode>\n                        </urlParameters>\n                    </module>\n                    <icon>link_popup.gif</icon>\n                    <script>browse_links.php?mode=wizard</script>\n                    <JSopenParams>height=500,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>\n                    <!--\n                        Color can be picked from image if provided:\n                        <exampleImg>EXT:introduction/Initialisation/Files/images/theme/IntroductionPackage.png</exampleImg>\n                    -->\n                </link>\n            </wizards>\n        </config>\n        <!-- <onChange>reload</onChange> -->\n    </TCEforms>\n</color>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxdisplaycond": {
+    "prefix": "flxdisplaycond",
+    "body": "\n<displayCond>FIELD:settings.relatedField:=:1</displayCond>\n<!-- <onChange>reload</onChange> -->\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxfalimage": {
+    "prefix": "flxfalimage",
+    "body": "\n\n<image>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>inline</type>\n            <maxitems>1</maxitems>\n            <foreign_table>sys_file_reference</foreign_table>\n            <foreign_table_field>tablenames</foreign_table_field>\n            <foreign_label>uid_local</foreign_label>\n            <foreign_sortby>sorting_foreign</foreign_sortby>\n            <foreign_selector>uid_local</foreign_selector>\n            <foreign_selector_fieldTcaOverride type=\"array\">\n                <config>\n                    <appearance>\n                        <elementBrowserType>file</elementBrowserType>\n                        <elementBrowserAllowed>jpg,png,svg,jpeg,gif</elementBrowserAllowed>\n                    </appearance>\n                </config>\n            </foreign_selector_fieldTcaOverride>\n            <foreign_types type=\"array\">\n                <numIndex index=\"2\">\n                    <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>\n                </numIndex>\n            </foreign_types>\n            <foreign_match_fields type=\"array\">\n                <fieldname>image</fieldname>\n            </foreign_match_fields>\n            <appearance type=\"array\">\n                <newRecordLinkAddTitle>1</newRecordLinkAddTitle>\n                <headerThumbnail>\n                    <field>uid_local</field>\n                    <height>64</height>\n                    <width>64</width>\n                </headerThumbnail>\n                <enabledControls>\n                    <info>1</info>\n                    <new>0</new>\n                    <dragdrop>0</dragdrop>\n                    <sort>1</sort>\n                    <hide>0</hide>\n                    <delete>1</delete>\n                    <localize>1</localize>\n                </enabledControls>\n            </appearance>\n            <overrideChildTca>\n                <columns type=\"array\">\n                    <uid_local type=\"array\">\n                        <config type=\"array\">\n                            <appearance type=\"array\">\n                                <elementBrowserType>file</elementBrowserType>\n                                <elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai</elementBrowserAllowed>\n                            </appearance>\n                        </config>\n                    </uid_local>\n                </columns>\n            </overrideChildTca>\n        </config>\n    </TCEforms>\n</image>",
+    "description": "",
+    "scope": ""
+  },
+  "flxfileimage": {
+    "prefix": "flxfileimage",
+    "body": "\n<fileimage>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>group</type>\n            <internal_type>file</internal_type>\n            <allowed>jpg,jpeg,png,gif</allowed>\n            <size>1</size>\n            <minitems>0</minitems>\n            <maxitems>1</maxitems>\n            <uploadfolder>uploads/pics</uploadfolder>\n            <show_thumbs>1</show_thumbs>\n        </config>\n        <!-- <onChange>reload</onChange> -->\n    </TCEforms>\n</fileimage>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxgroup": {
+    "prefix": "flxgroup",
+    "body": "\n<group>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>group</type>\n            <internal_type>db</internal_type>\n            <allowed>pages</allowed>\n            <size>3</size>\n            <maxitems>50</maxitems>\n            <minitems>0</minitems>\n        </config>\n    </TCEforms>\n</group>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxinput": {
+    "prefix": "flxinput",
+    "body": "\n<input>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>input</type>\n            <size>30</size>\n            <eval>trim,required</eval>\n        </config>\n    </TCEforms>\n</input>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxinputint": {
+    "prefix": "flxinputint",
+    "body": "\n<inputint>\n    <TCEforms>\n        <label>\n            LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:\n        </label>\n        <config>\n            <type>input</type>\n            <size>30</size>\n            <eval>trim,required,int</eval>\n            <default>1000</default>\n            <range>\n                <lower>100</lower>\n            </range>\n        </config>\n    </TCEforms>\n</inputint>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxlist": {
+    "prefix": "flxlist",
+    "body": "\n<list>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>select</type>\n            <items type=\"array\">\n                <numIndex index=\"0\" type=\"array\">\n                    <numIndex index=\"0\">Label A</numIndex>\n                    <numIndex index=\"1\">0</numIndex>\n                </numIndex>\n                <numIndex index=\"1\" type=\"array\">\n                    <numIndex index=\"0\">Label B</numIndex>\n                    <numIndex index=\"1\">1</numIndex>\n                </numIndex>\n            </items>\n            <size>1</size>\n            <minitems>1</minitems>\n            <maxitems>1</maxitems>\n        </config>\n        <!-- <onChange>reload</onChange> -->\n    </TCEforms>\n</list>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxrte": {
+    "prefix": "flxrte",
+    "body": "\n<rte>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>text</type>\n            <rows>5</rows>\n            <cols>30</cols>\n            <eval>trim,required</eval>\n            <enableRichtext>1</enableRichtext>\n            <richtextConfiguration>default</richtextConfiguration>\n        </config>\n    </TCEforms>\n</rte>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxsection": {
+    "prefix": "flxsection",
+    "body": "\n<section>\n    <section>1</section>\n    <type>array</type>\n    <el>\n        <container>\n            <title>\n                LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:\n            </title>\n            <type>array</type>\n            <el>\n                <text>\n                    <TCEforms>\n                        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:\n                        </label>\n                        <config>\n                            <type>text</type>\n                            <enableRichtext>1</enableRichtext>\n                        </config>\n                    </TCEforms>\n                </text>\n            </el>\n        </container>\n    </el>\n</section>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxselectside": {
+    "prefix": "flxselectside",
+    "body": "\n<selectside>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>select</type>\n            <renderType>selectMultipleSideBySide</renderType>\n            <internal_type>db</internal_type>\n            <foreign_table>tx_ecommerce_domain_model_ecommerce</foreign_table>\n            <foreign_table_where>AND tx_ecommerce_domain_model_ecommerce.deleted = 0 AND tx_ecommerce_domain_model_ecommerce.hidden = 0 AND tx_ecommerce_domain_model_ecommerce.sys_language_uid = ###REC_FIELD_sys_language_uid###</foreign_table_where>\n            <size>15</size>\n            <maxitems>999</maxitems>\n            <autoSizeMax>15</autoSizeMax>\n            <requestUpdate>1</requestUpdate>\n            <wizard>\n                <_PADDING>16</_PADDING>\n                <_VERTICAL></_VERTICAL>\n                <suggest>\n                    <type>suggest</type>\n                </suggest>\n            </wizard>\n            <enableMultiSelectFilterTextfield>true</enableMultiSelectFilterTextfield>\n        </config>\n    </TCEforms>\n</selectside>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxtextarea": {
+    "prefix": "flxtextarea",
+    "body": "\n<textarea>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>text</type>\n            <rows>5</rows>\n            <cols>30</cols>\n            <eval>trim,required</eval>\n        </config>\n    </TCEforms>\n</textarea>\n",
+    "description": "",
+    "scope": ""
+  },
+  "flxtypolink": {
+    "prefix": "flxtypolink",
+    "body": "\n<typolink>\n    <TCEforms>\n        <label>LLL:EXT:ns_theme/Resources/Private/Language/locallang_flex.xlf:</label>\n        <config>\n            <type>input</type>\n            <renderType>inputLink</renderType>\n            <size>30</size>\n            <eval>trim</eval>\n            <softref>typolink,typolink_tag,images,url</softref>\n            <fieldControl>\n                <linkPopup>\n                    <options>\n                        <!--<blindLinkOptions>file,mail,page,spec,url</blindLinkOptions>-->\n                        <!--<blindLinkFields>class,params,target,title</blindLinkFields>-->\n                    </options>\n                </linkPopup>\n            </fieldControl>\n        </config>\n    </TCEforms>\n</typolink>\n",
+    "description": "",
+    "scope": ""
+  }
+}

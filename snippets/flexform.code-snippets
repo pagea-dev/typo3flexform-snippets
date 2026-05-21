@@ -1,0 +1,261 @@
+{
+  "FlexForm Base Structure": {
+    "prefix": "flx",
+    "body": [
+      "<T3DataStructure>",
+      "    <sheets>",
+      "        <sDEF>",
+      "            <ROOT>",
+      "                <sheetTitle>$1</sheetTitle>",
+      "                <type>array</type>",
+      "                <el>",
+      "                    $0",
+      "                </el>",
+      "            </ROOT>",
+      "        </sDEF>",
+      "    </sheets>",
+      "</T3DataStructure>"
+    ],
+    "description": "TYPO3 FlexForm base structure (T3DataStructure) – TYPO3 13+"
+  },
+
+  "FlexForm Input (Text)": {
+    "prefix": "flxinput",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>input</type>",
+      "        <size>30</size>",
+      "        <required>true</required>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm text input field – TYPO3 13+"
+  },
+
+  "FlexForm Input (Number)": {
+    "prefix": "flxinputint",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>number</type>",
+      "        <default>0</default>",
+      "        <range>",
+      "            <lower>${3:0}</lower>",
+      "            <upper>${4:9999}</upper>",
+      "        </range>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm number input field – TYPO3 13+"
+  },
+
+  "FlexForm Textarea": {
+    "prefix": "flxtextarea",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>text</type>",
+      "        <rows>5</rows>",
+      "        <cols>30</cols>",
+      "        <required>true</required>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm textarea field – TYPO3 13+"
+  },
+
+  "FlexForm RTE": {
+    "prefix": "flxrte",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>text</type>",
+      "        <rows>5</rows>",
+      "        <enableRichtext>true</enableRichtext>",
+      "        <richtextConfiguration>default</richtextConfiguration>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm Rich Text Editor field – TYPO3 13+"
+  },
+
+  "FlexForm Checkbox": {
+    "prefix": "flxcheckbox",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>check</type>",
+      "        <default>0</default>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm checkbox field – TYPO3 13+"
+  },
+
+  "FlexForm Color": {
+    "prefix": "flxcolor",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>color</type>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm color picker field – TYPO3 13+"
+  },
+
+  "FlexForm Select Single": {
+    "prefix": "flxselectsingle",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>select</type>",
+      "        <renderType>selectSingle</renderType>",
+      "        <items type=\"array\">",
+      "            <numIndex index=\"0\" type=\"array\">",
+      "                <numIndex index=\"0\">Label A</numIndex>",
+      "                <numIndex index=\"1\">0</numIndex>",
+      "            </numIndex>",
+      "            <numIndex index=\"1\" type=\"array\">",
+      "                <numIndex index=\"0\">Label B</numIndex>",
+      "                <numIndex index=\"1\">1</numIndex>",
+      "            </numIndex>",
+      "        </items>",
+      "        <minitems>1</minitems>",
+      "        <maxitems>1</maxitems>",
+      "    </config>",
+      "    <!-- <onChange>reload</onChange> -->",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm single select field with static items – TYPO3 13+"
+  },
+
+  "FlexForm Select Multiple": {
+    "prefix": "flxselectmulti",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>select</type>",
+      "        <renderType>selectMultipleSideBySide</renderType>",
+      "        <items type=\"array\">",
+      "            <numIndex index=\"0\" type=\"array\">",
+      "                <numIndex index=\"0\">Label A</numIndex>",
+      "                <numIndex index=\"1\">0</numIndex>",
+      "            </numIndex>",
+      "            <numIndex index=\"1\" type=\"array\">",
+      "                <numIndex index=\"0\">Label B</numIndex>",
+      "                <numIndex index=\"1\">1</numIndex>",
+      "            </numIndex>",
+      "        </items>",
+      "        <size>5</size>",
+      "        <maxitems>999</maxitems>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm multi-select side-by-side field with static items – TYPO3 13+"
+  },
+
+  "FlexForm Select Multiple (DB Relation)": {
+    "prefix": "flxselectside",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>select</type>",
+      "        <renderType>selectMultipleSideBySide</renderType>",
+      "        <foreign_table>${3:tx_myextension_domain_model_item}</foreign_table>",
+      "        <foreign_table_where>AND ${3}.deleted = 0 AND ${3}.hidden = 0</foreign_table_where>",
+      "        <size>10</size>",
+      "        <maxitems>999</maxitems>",
+      "        <autoSizeMax>10</autoSizeMax>",
+      "        <enableMultiSelectFilterTextfield>true</enableMultiSelectFilterTextfield>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm multi-select side-by-side field with DB relation – TYPO3 13+"
+  },
+
+  "FlexForm FAL Image": {
+    "prefix": "flxfalimage",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>file</type>",
+      "        <maxitems>${3:1}</maxitems>",
+      "        <allowed>common-image-types</allowed>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm FAL image field – TYPO3 13+"
+  },
+
+  "FlexForm Group (DB Relation)": {
+    "prefix": "flxgroup",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>group</type>",
+      "        <allowed>${3:pages}</allowed>",
+      "        <size>3</size>",
+      "        <maxitems>50</maxitems>",
+      "        <minitems>0</minitems>",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm group field (DB relation) – TYPO3 13+"
+  },
+
+  "FlexForm Link": {
+    "prefix": "flxtypolink",
+    "body": [
+      "<${1:fieldName}>",
+      "    <label>$2</label>",
+      "    <config>",
+      "        <type>link</type>",
+      "        <!-- <allowedTypes>page,url,record,file,email,telephone,folder</allowedTypes> -->",
+      "    </config>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm link field – TYPO3 13+"
+  },
+
+  "FlexForm Section": {
+    "prefix": "flxsection",
+    "body": [
+      "<${1:sectionName}>",
+      "    <section>1</section>",
+      "    <type>array</type>",
+      "    <el>",
+      "        <${2:containerName}>",
+      "            <title>$3</title>",
+      "            <type>array</type>",
+      "            <el>",
+      "                $0",
+      "            </el>",
+      "        </${2}>",
+      "    </el>",
+      "</$1>"
+    ],
+    "description": "TYPO3 FlexForm repeatable section – TYPO3 13+"
+  },
+
+  "FlexForm Display Condition": {
+    "prefix": "flxdisplaycond",
+    "body": [
+      "<displayCond>FIELD:${1:fieldName}:=:${2:1}</displayCond>",
+      "<!-- <onChange>reload</onChange> -->"
+    ],
+    "description": "TYPO3 FlexForm display condition"
+  }
+}
